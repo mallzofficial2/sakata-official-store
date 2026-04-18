@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sakata Official Store</title>
+
+<meta name="description" content="Sakata Official Store menyediakan layanan digital premium seperti bot, website, dan sistem otomatisasi modern.">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jnicol/particleground/jquery.particleground.min.js"></script>
+
+<style>
+body{
+  margin:0;
+  font-family:"Share Tech Mono", monospace;
+  background:#000;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+#particles{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.card{
+  width:90%;
+  max-width:420px;
+  background:rgba(20,20,20,0.85);
+  border-radius:25px;
+  padding:30px 20px;
+  backdrop-filter:blur(20px);
+  box-shadow:0 0 40px rgba(255,255,255,0.1);
+  text-align:center;
+}
+
+/* FOTO */
+.profile-wrap{
+  position:relative;
+  display:flex;
+  justify-content:center;
+}
+
+.profile-wrap::before{
+  content:"";
+  position:absolute;
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+  filter:blur(15px);
+}
+
+.profile{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:3px solid #fff;
+  object-fit:cover;
+  z-index:2;
+}
+
+/* TEXT */
+h1{
+  font-family:"Orbitron";
+  margin-top:10px;
+}
+
+p{
+  color:#aaa;
+  font-size:0.9rem;
+}
+
+/* GRID */
+.grid{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+/* BUTTON */
+.btn{
+  padding:12px;
+  border-radius:10px;
+  text-decoration:none;
+  color:#fff;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  transition:0.3s;
+  font-size:0.85rem;
+}
+
+.btn:hover{
+  background:#fff;
+  color:#000;
+  transform:translateY(-3px);
+}
+
+/* FOOTER */
+.footer{
+  margin-top:20px;
+  font-size:0.7rem;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<div class="card">
+
+  <div class="profile-wrap">
+    <img 
+      src="https://d.uguu.se/AsedOCXD.jpg" 
+      class="profile"
+      onerror="this.src='https://ui-avatars.com/api/?name=Sakata&background=000&color=fff'"
+    >
+  </div>
+
+  <h1>SAKATA OFFICIAL</h1>
+<p>
+Sakata Official Store merupakan penyedia layanan digital premium yang berfokus pada pengembangan teknologi modern untuk memenuhi berbagai kebutuhan digital masa kini. Kami menyediakan layanan pembuatan bot WhatsApp dan Telegram, pengembangan website profesional, serta sistem otomatisasi yang dirancang untuk meningkatkan efisiensi dan produktivitas.
+
+<br><br>
+
+Dengan mengutamakan kualitas, stabilitas, dan kemudahan penggunaan, setiap layanan yang kami hadirkan dirancang secara detail agar dapat digunakan baik untuk kebutuhan personal maupun bisnis. Kami percaya bahwa teknologi yang baik adalah teknologi yang tidak hanya canggih, tetapi juga mudah diakses dan memberikan manfaat nyata bagi penggunanya.
+
+<br><br>
+
+Sakata Official Store terus berinovasi mengikuti perkembangan digital agar dapat memberikan solusi terbaik dengan tampilan modern, performa optimal, serta pengalaman pengguna yang nyaman dan terpercaya.
+</p>
+
+
+  <div class="grid">
+
+    <a href="https://t.me/InformationSakata" class="btn">
+      <i class="fab fa-telegram"></i> Channel Informasi
+    </a>
+    
+    <a href="https://t.me/AboutSakataOfficial" class="btn">
+      <i class="fab fa-telegram"></i> Channel Pribadi
+    </a>
+
+    <a href="https://whatsapp.com/channel/0029VbBznRJBfxo2IqrhLD18" class="btn">
+      <i class="fab fa-whatsapp"></i> Channel WhatsApp
+    </a>
+
+    <a href="https://t.me/SakataOfficiall" class="btn">
+      <i class="fas fa-user"></i> Contact Telegram
+    </a>
+
+    <a href="https://sociabuzz.com/sakata_123" class="btn">
+      <i class="fas fa-donate"></i> Donate Admin
+    </a>
+
+    <a href="https://tiktok.com/@sakata_reals" class="btn">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+
+  </div>
+
+  <div class="footer">
+    © 2026 Sakata Official Store
+  </div>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  $('#particles').particleground({
+    dotColor:'#ffffff',
+    lineColor:'#888888'
+  });
+});
+</script>
+
+</body>
+</html>
